@@ -1,0 +1,290 @@
+/* ---------- Positionnement des barres ---------- */
+body {
+	margin: 0;
+}
+header {
+	margin: 0;
+	top: 0;
+	left: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Barre globale ---------- */
+
+#nav1 {
+	margin: 0 auto;
+	text-align: center;
+	background-color: black;
+    z-index: 9999;
+    overflow-y: hidden;    
+}
+#nav1-minimal p {
+	font-family: 'FontAwesome';
+	font-size: 25px;
+	color: white;
+}
+span.nav1-img {
+	font-family: 'FontAwesome';
+	font-size: 25px;
+}
+#nav1-ul {
+	list-style: none;
+	padding: 0;
+}
+#nav1 a:not(.current) {
+	text-decoration: none;
+	color: white;
+}
+#nav1 a:hover {
+	color: #ff6709;
+}
+a.current {
+	text-decoration: none;
+	color: #ff6709;
+}
+/* Desktop */
+@media screen and (min-width: 1051px) {
+	/* Menu textuel */
+	span.nav1-img {
+		display: none;
+	}
+	span.nav1-txt {
+		display: inline;
+	}
+	/* Pas d'icone Ouvrir/Fermer Menu */
+	.resp-btn-display, .resp-btn-no-display {
+		display: none;
+	}
+	/* Logo couleur */
+	#logo-color {
+		display: inline;
+	}
+	#logo-bw {
+		display: none;
+	}
+	/* Menu horizontal */
+	#nav1-minimal {
+		display: inline;
+		padding: 30px;
+	}
+	#nav1-ul {
+		display: inline-block;
+	}
+	#nav1 li {
+		display: inline;
+		padding: 30px;
+	}
+
+}
+/* Transition Desktop-Tablette */
+@media screen and (max-width: 1050px) {
+	/* Menu textuel */
+	span.nav1-img {
+		display: none;
+	}
+	span.nav1-txt {
+		display: inline;
+	}
+	/* Pas d'icone Ouvrir/Fermer Menu */
+	.resp-btn-display, .resp-btn-no-display {
+		display: none;
+		cursor: pointer;
+	}
+	/* Logo couleur */
+	#logo-color {
+		display: inline;
+	}
+	#logo-bw {
+		display: none;
+	}
+	/* Menu horizontal */
+	#nav1-minimal {
+		display: inline;
+		padding: 12px;
+	}
+	#nav1-ul {
+		display: inline-block;
+	}
+	#nav1 li {
+		display: inline;
+		padding: 12px;
+	}
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+    /* Menu Icone */
+	span.nav1-img {
+		display: inline;
+	}
+	span.nav1-txt {
+		display: none;
+	}
+	/* Pas d'icone Ouvrir/Fermer Menu */
+	.resp-btn-display, .resp-btn-no-display {
+		display: none;
+		cursor: pointer;
+	}
+	/* Logo Xiaomi couleur */
+	#logo-color {
+		display: inline;
+	}
+	#logo-bw {
+		display: none
+	}
+	/* Menu horizontal */
+	#nav1 {
+		height: 50px;
+		display: flex;
+        display: -webkit-flex;
+		flex-direction: row;
+        -webkit-flex-direction: row;
+		align-items: center;
+        -webkit-align-items: center;
+	}
+	#nav1-minimal {
+		width: 10%;
+		margin-right: 20px;
+	}
+	#nav1-ul {
+		width: 80%;
+		display: flex;
+        display: -webkit-flex;
+		justify-content: space-between;
+        -webkit-justify-content: space-between;
+	}
+}
+/* Smartphone */
+@media screen and (max-width: 480px) {
+	/* Menu invisible */
+	span.nav1-img {
+		display: inline;
+		padding-right: 10px;
+		padding-left: 3px;
+	}
+	span.nav1-txt {
+		display: inline;
+	}
+	#nav1 {
+		display: block;
+    }
+	#nav1-minimal {
+		display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+		justify-content: space-between;
+        -webkit-justify-content: space-between;
+	}
+
+	#nav1-minimal.nav1-minimal-closed {
+		width: 100%;
+		height: 99%;
+	}
+	#nav1-ul.nav1-ul-closed {
+		height: 1%;
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+	#nav1-ul li {
+		height: 70px;
+		text-align: left;
+		display: none;
+	}
+	/* Menu ouvert */
+	@keyframes show-nav1 {
+		100% {height: 100%;}
+	}
+	#nav1.nav1-opened {
+		/*height: 100%;*/
+		animation: show-nav1 0.5s forwards ease-in;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		overflow: auto;
+	}
+	#nav1.nav1-opened::-webkit-scrollbar {
+		display: none;
+	}
+	#nav1-minimal.nav1-minimal-opened {
+		height: 55px;
+		margin: 0;
+		width: 100%;
+	}
+	#nav1-ul.nav1-ul-opened {
+		height: 70%;
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+	#nav1-ul.nav1-ul-opened li {
+		display: block;
+	}
+	.hide-slideshow {
+		display: none;
+	}
+	/* Barre minimale */
+	#nav2 {
+		display: none;
+	}
+	/* Logo Xiaomi blanc */
+	#logo-color {
+		display: none;
+	}
+	#logo-bw {
+		display: inline;
+	}
+	/* Icone ouvrir menu */
+	.resp-btn-display {
+		display: inline;
+		cursor: pointer;
+	}
+	.resp-btn-no-display {
+		display: none;
+		cursor: pointer;
+	}
+}
+
+
+/* ----------  Barre locale ---------- */
+#nav2 {
+	text-align: center;
+	background-color: white;   
+}
+#nav2 ul {
+	list-style: none;
+}
+#nav2 a {
+	text-decoration: none;
+	color: #555555;
+	padding: 0 30px;
+}
+#nav2 a:hover {
+	color: #2a2a2a;
+}
+/* Desktop */
+@media screen and (min-width: 769px) {
+	#nav2 ul {
+		display: inline-block;
+	}
+	#nav2 li {
+		display: inline;
+	}
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+	#nav2 ul {
+		display: inline-block;
+	}
+	#nav2 li {
+		display: inline;
+	}
+}
+/* Smartphone */
+@media screen and (max-width: 480px) {
+	#nav2 ul {
+		display: none;
+	}
+}

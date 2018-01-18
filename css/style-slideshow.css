@@ -1,0 +1,82 @@
+/* W3SCHOOLS copyright */
+
+
+/* Tablet, Smartphone: pas de carousel */
+@media screen and (max-width: 480px) {
+	.slideshow-container {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.slideshow-container {
+		display: none;
+	}
+}
+
+* {box-sizing:border-box}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Boutons Next, Previous */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #2a2a2a;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  color: white;
+  background-color: rgba(0,0,0, 0.3);
+}
+
+/* Texte */
+.text {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+

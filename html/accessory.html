@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Barre de titre -->
+		<title>Xiaomi.com</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../image/logo/logo_xiaomi.ico"/>
+		<!-- Fichiers CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style-nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-slideshow.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-footer.css"/>
+		<!-- Polices -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<header>
+			<div id="nav1"> <!-- Navigation globale -->
+				<!-- Logo et Icone menu -->
+				<div id="nav1-minimal" class="nav1-minimal-closed">
+                    <a id="logo-color" href="../index.html"><img src="../image/logo/logo_xiaomi.svg" alt="Xiaomi logo" width="25px" style="vertical-align: middle"/></a>
+					<a id="logo-bw" href="../index.html"><img src="../image/logo/logo_xiaomi.png" alt="Xiaomi Logo" width="25px"/></a>
+					<p id="nav-open" class="resp-btn-display" onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></p> <!-- Bouton ouvrir menu -->
+					<p id="nav-close" class="resp-btn-no-display" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></p> <!-- Bouton fermer menu -->
+				</div>
+				<!-- Liste -->
+				<ul id="nav1-ul" class="nav1-ul-closed">
+					<li><a href="../html/smartphone.html"><span class="nav1-img"><i class="fa fa-mobile" aria-hidden="true"></i></span><span class="nav1-txt">Smartphones</span></a></li>
+					<li><a href="../html/tablet_laptop.html"><span class="nav1-img"><i class="fa fa-laptop" aria-hidden="true"></i></span><span class="nav1-txt">Tablets & Laptops</span></a></li>
+					<li><a class="current" href="../html/accessory.html"><span class="nav1-img"><i class="fa fa-headphones" aria-hidden="true"></i></span><span class="nav1-txt">Accessories</span></a></li>
+					<li><a href="../html/high_tech.html"><span class="nav1-img"><i class="fa fa-rocket" aria-hidden="true"></i></span><span class="nav1-txt">High Tech</span></a></li>
+					<li><a href="../html/smart_home.html"><span class="nav1-img"><i class="fa fa-home" aria-hidden="true"></i></span><span class="nav1-txt">Smart Home</span></a></li>
+					<li><a href="../html/about.html"><span class="nav1-img"><i class="fa fa-info" aria-hidden="true"></i></span><span class="nav1-txt">About Us</span></a></li>
+				</ul>
+			</div>
+			<div id="nav2"> <!-- Navigation locale -->
+				<ul>
+					<li><a href="#mi-audio">Audio</a></li>
+                    <li><a href="#mi-watch">Watches</a></li>
+					<li><a href="#mi-powerbank">PowerBanks</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- Slideshow -->
+		<div class="slideshow-container">
+            <div class="mySlides fade">
+				<img src="../image/slideshow/mispeaker.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">MI BLUETOOTH SPEAKER</span></div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../image/slideshow/miearphone.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">MI HYBRID EARPHONES</span></div>
+			</div>
+            
+			<div class="mySlides fade">
+				<img src="../image/slideshow/miwatch.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">AMAZFIT PACE</span></div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+			<a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+        <!-- Image Presentation (remplace le slideshow en mode smartphone et tablette) -->
+		<div class="img-intro">
+            <h1>Mi Headphones 2</h1>
+            <p>Music has never been <em>that</em> good<p>
+            <img src="../image/catalogue/miheadphones.jpg" alt="mi headphones picture"/>
+        </div>
+
+        <!-- _____________________ Categorie Audio ____________________ -->
+        <div class="title-bar" id="mi-audio">
+			<h1>Audio</h1>
+            <h1><span onclick="openSub(1)" class="open-sub sub-btn-not-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(1)" class="close-sub sub-btn-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-opened">
+			<!--  Mi headphones 2 -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Mi Headphones 2&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/earbud-headphones/pp_613782.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Wired </strong> | <strong> 20-40 KHz </strong> | <strong> 32ohms </strong> | <strong> 240 g </strong></p>
+						<p>Mi Headphones - namely so-called new headphones from Xiaomi. The graphene, made of carbon atoms, features light weight, robustness, superior conductivity, clear and penetrating music.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Adopted graphene vibration diaphragm and low frequency passive radiator</li>
+							<li>Closed aluminium alloy sound cavity provides high fidelity music</li>
+							<li>Has functions of voice control, songs switch and answering calls</li>
+							<li>High sensitive built-in microphone reduces the noise, bring a high-quality conversation</li>
+							<li>PU earmuffs and protein headband, more comfortable and soft</li>
+							<li>Detachable design, easy to carry and maintain</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/miheadphones.jpg" alt="headphones picture">
+					</div>
+				</div>
+			</div>
+            <!--  Mi Hybrid Pro -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Mi Hybrid Pro&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/earbud-headphones/pp_566702.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Wired </strong> | <strong> 20-40 KHz </strong> | <strong> 32ohms </strong> | <strong>  17 g </strong></p>
+						<p>A good sound has the ability to bring out our emotions. The Mi In-Ear Heapdhones Pro has the ability to bring out expressions and nuances in your favourite song. Listen to it with a fresh perspective, and fall in love like you did the first time.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Xiaomi in-ear three-unit driver earphones</li>
+							<li>Dual dynamic and balanced armature drivers, for detailed sound</li>
+							<li>Graphene vibrating diaphragm</li>
+							<li>Elastic ground cable</li>
+							<li>The volume control keys are not compatible with iOS system</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/mihybridpro.jpg" alt="hybridpro picture">
+					</div>
+				</div>
+			</div>
+            <!--  Mi Bluetooth Speaker -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Bluetooth Speaker&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/speakers/pp_621648.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Portable </strong> | <strong> 100Hz-18KHz </strong> | <strong> 3ohms </strong> | <strong>  155 g </strong></p>
+						<p>Square Box Bluetooth Speaker is designed for the lovers of portable music. With dimensions of 154.5 × 62 × 25.3 mm, it is a lightweight and compact speaker that fits perfectly into the active life of a modern person. </p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Offers easy connection with AUX port devices</li>
+							<li>Built-in microphone, you can answer or reject your phone call by pressing the speaker's power button</li>
+							<li>Exquisite outlook design makes it a good partner during your leisure time.</li>
+							<li>Portable and lightweight, great for taking outside with you.</li>
+							<li>Built-in 1200mAh lithium polymer battery, beautiful music accompany with you for 10 hours</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/bluetoothspeaker.jpg" alt="bluetooth speaker picture">
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- _____________________ Categorie Watches ____________________ -->
+        <div class="title-bar" id="mi-watch">
+			<h1>Watches</h1>
+            <h1><span onclick="openSub(2)" class="open-sub sub-btn-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(2)" class="close-sub sub-btn-not-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-closed">
+			<!--  Amazfit Pace -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Amazfit Pace&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-watches/pp_687047.html?wid=4" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Touch Screen </strong> | <strong> Standby time 11 days </strong> | <strong> Charge 3 hours </strong> | <strong> 280mAh </strong></p>
+						<p>The first Amazfit smart watch with a capacitive touch screen, convenient for those who want to get fit. There are many useful features such as heart rate sensor, built-in GPS, info push and pedometer.</p>
+						<p>Main Features:</p>
+						<ul>
+				            <li>Compatible Android, IOS</li>
+							<li>Bluetooth calling: Phone call reminder </li>
+							<li>Messaging: Message sending</li>
+							<li>Health tracker: Heart rate monitor,Pedometer</li>
+							<li>Remote control function: Remote music </li>
+							<li>Alert type: Vibration </li>
+                            <li>Other Function: Alarm,GPS,Weather forecast,WiFi</li>
+                            <li>Multiple sports recorders: track running time, heart rate, pace, calories, speed, cadence, altitude, etc.</li>
+							<li>Well appointed communication tool: receive incoming call, message, email, calendar, weather and notification of App</li>
+							<li>Excellent wristband performance: with Alipay, GPS, phone-free music, IP67 waterproof</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/amazfitpace.jpg" alt="amazfit pace picture">
+					</div>
+				</div>
+			</div>
+            <!--  Amazfit Bip -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Amazfit Bip&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-watches/pp_962565.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Touch Screen </strong> | <strong> Standby time 45 days  </strong> | <strong> Charge 2.5 hours </strong> | <strong> 190mAh </strong></p>
+						<p>The newest Amazfit Bip got the square screen, unlike the Amazfit Pace. But its main feature is super long standby time, about 45 days. With waterproof rate IP68, this Amazfit Youth Edition smartwatch can be used in many different situations.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Compatible OS: Android,IOS</li>
+							<li>Alert type: Vibration</li>
+							<li>Bluetooth calling: Phone call reminder </li>
+							<li>Health tracker: Heart rate monitor,Sleep monitor</li>
+							<li>Messaging: Message reminder</li>
+                            <li>Other Function: Alarm,Barometer,GPS</li>
+							<li>Waterproof: Yes</li>
+							<li>Dual cameras</li>
+							<li>Bluetooth 4.1</li>
+                            <li>Sensors: Hall Sensor, Gravity Sensor, Ambient Light Sensor, Proximity Sensor, Gesture Sensor, E-compass, etc.</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/amazfitbip.jpg" alt="amarfitbip picture">
+					</div>
+				</div>
+			</div>
+            <!--  Mi Band 2 -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Mi Band 2&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-watches/pp_362705.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> OLED Touch Screen </strong> | <strong> Standby time 45 days  </strong> | <strong> Charge 2.5 hours </strong> | <strong> 190mAh </strong></p>
+						<p>The new version of Mi Band 2 has an OLED-display and a touch panel, which will make more information available to you. You can find out the detailed information about the covered distance, time, heart rate, and many other useful data with just one touch of a finger.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Compatible OS: Android,IOS</li>
+							<li>Bluetooth Synchronization</li>
+							<li>Heart Rate Monitor</li>
+							<li>Incoming Calls / APP Message Alert</li>
+							<li>Sleeping, sport Monitoring</li>
+                            <li>Intelligent Alarm Function</li>
+							<li>IP67 Waterproof</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/miband2.jpg" alt="miband2 picture">
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- _____________________ Categorie Powerbank ____________________ -->
+        <div class="title-bar" id="mi-powerbank">
+			<h1>PowerBanks</h1>
+            <h1><span onclick="openSub(3)" class="open-sub sub-btn-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(3)" class="close-sub sub-btn-not-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-closed">
+			<!--  Mi Power Bank 10000mAh -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Powerbank 10000&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/power-banks/pp_343014.html?wid=21" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 10000mAh </strong> | <strong> USB-C </strong></p>
+						<p>To ensure your gadgets are always working properly, no matter how far you are planning to go in your journey Xiaomi has developed the Mi Power Bank with USB Type-C.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Smart mobile power bidirectional output to charge fast and secure with 18W maximum power.</li>
+							<li>Type-C USB charge and discharge</li>
+							<li>High-density lithium polymer battery.</li>
+							<li>Ruggedness crash, anti-sweat corrosion with aluminum alloy metal case.</li>
+							<li>Power: 3.85V ( 38.5Wh )</li>
+                            <li>Product size: 5.04 x 2.87 x 0.47 inches</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/powerbank10000.jpg" alt="powerbank picture">
+					</div>
+				</div>
+			</div>
+            <!--  Mi Power Bank 5000mAh -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Powerbank 5000&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 5000mAh </strong> | <strong> micro USB </strong></p>
+						<p>It is probably impossible to live any kind of life without technology. We became too addicted to refuse the urge to call our family or friends, shoot pictures, check our work mail, entertain ourselves. The biggest gripe about smart devices is battery life. This universal Battery Xiaomi Mi Power bank 5000mAh is meant to improve your life. </p>
+						<p>Main Features:</p>
+						<ul>
+							<li>5000mAh capacity lithium polymer battery</li>
+							<li>Super slim aluminium case: 9.9mm</li>
+							<li>Overcharge and over-discharge protection.</li>
+							<li>Temperature resistance</li>
+							<li>Product size: 125 x 69 x 9.9 mm</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/powerbank5000.jpg" alt="powerbank picture">
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- Footer -->
+		<footer>
+			<div class="section">
+				<div id="col1">
+					<ul>
+						<li><p><strong>LEARN</strong></p></li>
+						<li><p><a href="../index.html">About Xiaomi Inc.</a></p></li>
+						<li><p><a href="about.html">About this website</a></p></li>
+						<li><p><a href="../index.html#art-qa">F.A.Q.s</a></p></li>
+						<li><p><a href="contact.html">Ask a question</a></p></li>
+
+					</ul>
+				</div>
+				<div id="col2">
+					<ul>
+						<li><p><strong>SHOP</strong></p></li>
+						<li><p><a href="smartphone.html">Smartphones</a></p></li>
+						<li><p><a href="tablet_laptop.html">Tablets & Laptops</a></p></li>
+						<li><p><a href="quiz.html">How to choose a smartphone</a></p></li>
+						<li><p><a href="compare.html">Xiaomi VS Apple</a></p></li>
+					</ul>
+				</div>
+				<div id="col3">
+					<div id="center-col3">
+						<p>This Website is set up and operated by Audrey M. for the benefit of the UTT.  Audrey Muratore hereby states that this website is dedicated but not related to Xiaomi Inc. or any of its affiliated entity to sell products of Xiaomi Inc.</p>
+						<p><i class="fa fa-copyright" aria-hidden="true"></i> Xiaomi.com by Audrey Muratore, 2017-2017.</p>
+						<p class="footer-icon"><a target="__blank" href="https://twitter.com/xiaomi"><i class="fa fa-twitter" aria-hidden="true"></i></a>   <a target="__blank" href="https://www.facebook.com/xiaomiglobal/"><i class="fa fa-facebook" aria-hidden="true"></i></a>   <a target="__blank" href="https://plus.google.com/+MiGlobal"><i class="fa fa-google-plus" aria-hidden="true"></i></a>    <a target="__blank" href="http://www.mi.com/en/"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	<!-- Scripts -->
+	<script src="../js/script-nav.js"></script>
+	<script src="../js/script-slideshow.js"></script>
+    <script src="../js/script-main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Barre de titre -->
+		<title>Xiaomi.com</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../image/logo/logo_xiaomi.ico"/>
+		<!-- Fichiers CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/style-nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-slideshow.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style-footer.css"/>
+		<!-- Polices -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		<header>
+			<div id="nav1"> <!-- Navigation globale -->
+				<!-- Logo et Icone menu -->
+				<div id="nav1-minimal" class="nav1-minimal-closed">
+					<a id="logo-color" href="../index.html"><img src="../image/logo/logo_xiaomi.svg" alt="Xiaomi logo" width="25px" style="vertical-align: middle"/></a>
+					<a id="logo-bw" href="../index.html"><img src="../image/logo/logo_xiaomi.png" alt="Xiaomi Logo" width="25px"/></a>
+					<p id="nav-open" class="resp-btn-display" onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></p> <!-- Bouton ouvrir menu -->
+					<p id="nav-close" class="resp-btn-no-display" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></p> <!-- Bouton fermer menu -->
+				</div>
+				<!-- Liste -->
+				<ul id="nav1-ul" class="nav1-ul-closed">
+					<li><a href="../html/smartphone.html"><span class="nav1-img"><i class="fa fa-mobile" aria-hidden="true"></i></span><span class="nav1-txt">Smartphones</span></a></li>
+					<li><a href="../html/tablet_laptop.html"><span class="nav1-img"><i class="fa fa-laptop" aria-hidden="true"></i></span><span class="nav1-txt">Tablets & Laptops</span></a></li>
+					<li><a href="../html/accessory.html"><span class="nav1-img"><i class="fa fa-headphones" aria-hidden="true"></i></span><span class="nav1-txt">Accessories</span></a></li>
+					<li><a href="../html/high_tech.html"><span class="nav1-img"><i class="fa fa-rocket" aria-hidden="true"></i></span><span class="nav1-txt">High Tech</span></a></li>
+					<li><a class="current" href="../html/smart_home.html"><span class="nav1-img"><i class="fa fa-home" aria-hidden="true"></i></span><span class="nav1-txt">Smart Home</span></a></li>
+					<li><a href="../html/about.html"><span class="nav1-img"><i class="fa fa-info" aria-hidden="true"></i></span><span class="nav1-txt">About Us</span></a></li>
+				</ul>
+			</div>
+			<div id="nav2"> <!-- Navigation locale -->
+				<ul>
+					<li><a href="#mi-lighting">Lighting</a></li>
+					<li><a href="#mi-appliances">Appliances</a></li>
+                    <li><a href="#mi-sensor">Sensors</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- Slideshow -->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="../image/slideshow/yeelightlamp.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">Yeelight Desk Lamp</span></div>
+			</div>
+            <div class="mySlides fade">
+				<img src="../image/slideshow/vacuum.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">Robot Vacuum Cleaner 2</span></div>
+			</div>
+            <div class="mySlides fade">
+				<img src="../image/slideshow/yeelightbulb.jpg" style="width:100%"/>
+				<div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">Yeelight Smart Bulb</span></div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+			<a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+        <!-- Image Presentation (remplace le slideshow en mode smartphone et tablette) -->
+		<div class="img-intro">
+            <h1>Yeelight Bedside Lamp</h1>
+            <p>Light up your life<p>
+            <img src="../image/catalogue/yeelightbedside.jpg" alt="yeelight bedside lamp picture"/>
+        </div>
+
+		<!-- _____________________ Categorie Lighting ____________________ -->
+        <div class="title-bar" id="mi-lighting">
+			<h1>Lighting</h1>
+            <h1><span onclick="openSub(1)" class="open-sub sub-btn-not-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(1)" class="close-sub sub-btn-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-opened">
+			<!--  yeelight Bedside lamp -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Bedside Lamp&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-lighting/pp_1032313.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 300 lumens </strong> | <strong> 16 million colors </strong> | <strong> Bluetooth</strong></p>
+						<p>This lamp will suit your bedroom perfectly. It features different levels of light intensity and endless shades of color. Although you can press the button on the top of the lamp, it is also possible to adjust brightness and color via your smartphone. On top of that, Yeelight bedside lamp can wake you up in the morning!</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Magic colors: choose from a tremendous range of 16 million colors</li>
+							<li>Dimmable: adjust color temperature and brightness for suitable light</li>
+							<li>Color temperature: 1700K-6500K color temperature gradual change function</li>
+							<li>Perfect CRI: professional optical design with high-quality Osram LED that of high color rendering index</li>
+							<li>Touch control design, app control</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/yeelightbedside.jpg" alt="yeelight bedside lamp picture">
+					</div>
+				</div>
+			</div>
+            <!--  yeelight smart led bulb -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Smart Bulb&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-lighting/pp_361555.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 600 lumens </strong> | <strong> 16 million colors </strong> | <strong> WI-Fi </strong></p>
+						<p>Studies have found that the color of light can affect human senses, stimulate nerves, and produce a variety of emotional and psychological effects. Experience it yourself with Yeelight Smart Bulb.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>16 millions colors at your fingertips, romantic ambient light decorates your life.</li>
+							<li>1700-6500K adjustable white light: Wide range temperature adjustment, fulfilling all your needs.</li>
+							<li>WiFi remote control: Stable and high-speed transmission, everything is just in your hand.</li>
+                            <li>Ultra long lifetime of up to 11 years, you don't even have to think about replacing a bulb</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/yeelightbulb.jpg" alt="yeelight bulb picture">
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- _____________________ Categorie Appliances ____________________ -->
+        <div class="title-bar" id="mi-appliances">
+			<h1>Appliances</h1>
+            <h1><span onclick="openSub(2)" class="open-sub sub-btn-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(2)" class="close-sub sub-btn-not-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-closed">
+			<!-- Vacuum Cleaner 2  -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Robot vacuum 2&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.aliexpress.com/item/International-Version-New-Original-Xiaomi-Mi-Robot-Vacuum-Cleaner-Mijia-Roborock-2nd-Automatic-Cleaning-Robot/32842658455.html?spm=2114.search0204.3.1.MxuYRJ&ws_ab_test=searchweb0_0,searchweb201602_3_10152_10151_10065_10068_10344_10342_10343_10340_10341_10084_10083_10305_10304_10307_10306_10302_10059_10184_10314_10534_100031_10604_10103_10142,searchweb201603_6,ppcSwitch_5_ppcChannel&algo_expid=888e4b8f-5e1e-4bfc-83bc-2a2a8e0b69ce-0&algo_pvid=888e4b8f-5e1e-4bfc-83bc-2a2a8e0b69ce&priceBeautifyAB=0" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 2.5h Working time </strong> | <strong> Sweeping </strong> | <strong> Mopping </strong></p>
+						<p>Imagine a world where there is no more chores to do at home. Mijia now introduces Robot Vacuum Cleaner 2 in order to help you keep things clean! The Robot Vacuum Cleaner 2 is a fantastic device that will first sweep the floor and then mop it!</p>
+						<p>Main Features:</p>
+						<ul>
+				            <li>Sweeping and mopping function</li>
+							<li>Automatic area cleaning function</li>
+							<li>2000Pa powerful suction</li>
+							<li>Omnidirectional pressure sensor</li>
+							<li>5200mAh high-capacity battery</li>
+							<li>Powerful cleaning performance</li>
+                            <li>APP remote control</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/vacuumcleaner.jpg" alt="vacuum cleaner picture">
+					</div>
+				</div>
+			</div>
+            <!--  Smart Lock -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Smart DoorLock&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> Fingerprint unlock </strong> | <strong> Phone unlock </strong> | <strong> password unlock </strong> | <strong> key unlock </strong></p>
+						<p>This product comes with several interesting features. In fact, after you lock the door, everything that happens in the house can be configured with the help of a smartphone. It only depends on which elements of the ecosystem you've got.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Supports 4 unlock methods (fingerprint, mobile phone Bluetooth, password, key)</li>
+							<li>Supported mobile phone: OS : iOS 8, Android 4.4 and above</li>
+							<li>Applicable Range of door thinkness: 40-120mm</li>
+							<li>Lock: prying resistant, sawing resistant, anti-theft</li>
+							<li>Fingerprint tolerance time: 15 times</li>
+                            <li>Password tolerance time: 5 times</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/smartlock.jpg" alt="smart lock picture">
+					</div>
+				</div>
+			</div>
+            <!--  Smart Toilet Seat -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Smart Toilet&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/other-home-improvement/pp_861678.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> 4-40 Deg.C </strong> | <strong> 0.08-0.75 MPa</strong></p>
+						<p>Here comes the Smart Toilet Seat, as smart as smart could be -- it is not only a simple toilet seat but also an electronic bidet for you or your family to wash yourself up easily. Helps you keep your life hygienic and healthy.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Hygienic fresh water, prevent from bacteria breeding</li>
+							<li>Comfortable Feminine Cleaning</li>
+							<li>4-grade Adjustable Water Temp. Pressure Seat Temp.</li>
+							<li>Cold-hot Massage Washing Function</li>
+							<li>Before washing, the ringlike flow will clean the nozzle thoroughly with UV light automatically killing the bacteria on the nozzle when the user is away from the toilet seat</li>
+                            <li>LED nightlight illumination</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/toiletseat.jpg" alt="toilet seat picture">
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- _____________________ Categorie Sensors ____________________ -->
+        <div class="title-bar" id="mi-sensor">
+			<h1>Sensors</h1>
+            <h1><span onclick="openSub(3)" class="open-sub sub-btn-visible"><i class="fa fa-chevron-down" aria-hidden="true"></i></span><span onclick="closeSub(3)" class="close-sub sub-btn-not-visible"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></h1>
+		</div>
+		<div class="category art-closed">
+			<!-- Aqara Switch  -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Smart Switch&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/alarm-systems/pp_610095.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> ZigBee wireless </strong> | <strong> Dimensions 86*86*12mm </strong></p>
+						<p>Do you ever think about how many times you turn on / off the lighting controls? Do you ever feel that how convenient it will be if we are able to turn on / off the switch of the single or multiple groups of lights through one click on the cellphone? The Aqara smart light control is not only able to provide multiple control on the lighting system, but also comes with a remote lighting control.</p>
+						<p>Main Features:</p>
+						<ul>
+				            <li>This item must match the xiaomi multifunctional gateway to use.</li>
+							<li>Can connect to Aqara smart device or other ZigBee devices</li>
+                            <li>Allows you to create different scenarios such as turning the light upon detecting people moving.</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/aqaraswitch.jpg" alt="switch picture">
+					</div>
+				</div>
+			</div>
+            <!--  Smart Door Window Sensor -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Windows Sensor&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/smart-light-bulb/pp_257677.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> ZigBee wireless </strong> | <strong> 14g</strong></p>
+						<p>This time, Xiaomi has created a smart sensor that can be used both for Windows and Doors. This intelligent home security equipment can be used with Smartphone Control and coupled with other products from the ecosystem. </p>
+						<p>Main Features:</p>
+						<ul>
+							<li>This item must match the xiaomi multifunctional gateway to use.</li>
+                            <li>Push the Door: The light automatically turn on.</li>
+							<li>Away From Home Modes: If someone broke into, the bell will remind and taking video</li>
+							<li>Intelligent Sensors: Open the window let fresh air into room</li>
+							<li>Small size, easy to install</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/windowsensor.jpg" alt)="windows sensor picture">
+					</div>
+				</div>
+			</div>
+            <!--  Occupancy Sensor -->
+			<div class="fond-blanc">
+				<div class="section">
+					<div class="txt-block">
+                        <h2>Occupancy Sensor&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="buy now" href="https://www.gearbest.com/alarm-systems/pp_659226.html" target="__blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a class="buy-btn" title="back to top" href="#nav1"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h2>
+						<p><strong> ZigBee wireless </strong> | <strong> 7m detection </strong> | <strong> 170 degrees angle </strong></p>
+						<p>This product will tell if there is movement inside your house. Then, it will be able to turn the lights on accordingly for instance. It all depends on which elements of the ecosystem you've got.</p>
+						<p>Main Features:</p>
+						<ul>
+							<li>Work with other Xiaomi smart devices</li>
+							<li>Intelligent induction: when somebody goes through, the night light will turn on automatically</li>
+							<li>Sense the lightness and dark of your room</li>
+							<li>ZigBee wireless connection</li>
+							<li>Detection distance: 7m</li>
+                            <li>Detection angle: 170 degree</li>
+						</ul>
+					</div>
+					<div class="img-block">
+						<img src="../image/catalogue/occupancysensor.jpg" alt="occupancy sensor picture">
+					</div>
+				</div>
+			</div>
+        </div>
+
+
+        <!-- Footer -->
+		<footer>
+			<div class="section">
+				<div id="col1">
+					<ul>
+						<li><p><strong>LEARN</strong></p></li>
+						<li><p><a href="../index.html">About Xiaomi Inc.</a></p></li>
+						<li><p><a href="about.html">About this website</a></p></li>
+						<li><p><a href="../index.html#art-qa">F.A.Q.s</a></p></li>
+						<li><p><a href="contact.html">Ask a question</a></p></li>
+
+					</ul>
+				</div>
+				<div id="col2">
+					<ul>
+						<li><p><strong>SHOP</strong></p></li>
+						<li><p><a href="smartphone.html">Smartphones</a></p></li>
+						<li><p><a href="tablet_laptop.html">Tablets & Laptops</a></p></li>
+						<li><p><a href="quiz.html">How to choose a smartphone</a></p></li>
+						<li><p><a href="compare.html">Xiaomi VS Apple</a></p></li>
+					</ul>
+				</div>
+				<div id="col3">
+					<div id="center-col3">
+						<p>This Website is set up and operated by Audrey M. for the benefit of the UTT.  Audrey Muratore hereby states that this website is dedicated but not related to Xiaomi Inc. or any of its affiliated entity to sell products of Xiaomi Inc.</p>
+						<p><i class="fa fa-copyright" aria-hidden="true"></i> Xiaomi.com by Audrey Muratore, 2017-2017.</p>
+						<p class="footer-icon"><a target="__blank" href="https://twitter.com/xiaomi"><i class="fa fa-twitter" aria-hidden="true"></i></a>   <a target="__blank" href="https://www.facebook.com/xiaomiglobal/"><i class="fa fa-facebook" aria-hidden="true"></i></a>   <a target="__blank" href="https://plus.google.com/+MiGlobal"><i class="fa fa-google-plus" aria-hidden="true"></i></a>    <a target="__blank" href="http://www.mi.com/en/"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<!-- Scripts -->
+	<script src="../js/script-nav.js"></script>
+	<script src="../js/script-slideshow.js"></script>
+    <script src="../js/script-main.js"></script>
+	</body>
+</html>

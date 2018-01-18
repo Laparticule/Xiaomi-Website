@@ -1,0 +1,60 @@
+/* Code Adapté - Original Gary Carino CodeOpen */
+h1 {
+    text-align: center;
+}
+
+#quiz-1, #quiz-2 {
+    text-indent: 10px;
+}
+#quiz-1 #question ul, #quiz-2 #question2 ul {
+    list-style-type: none;
+    padding: 0;
+	font-family: 'Lato';
+}
+#quiz-1 #question li, #quiz-2 #question2 li {
+	padding-bottom: 20px;
+}
+
+
+.button a {
+    border:2px solid #ff6709;
+    padding: 10px 20px;
+    text-indent: 0;
+    margin: 0;
+    position: relative;
+    float:right;
+    color: #2a2a2a;
+    margin: 0 2px 0 2px;
+    text-decoration: none;
+}
+
+.button a:active, .button a:hover {
+    background-color: #ff6907;
+    color: white;
+}
+.container {
+    max-width: 800px;
+    margin:auto;
+}
+#quiz-1, #quiz-2 {
+    padding: 0 25px 40px 10px;
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+#prev, #prev2 {
+    display:none;
+}
+
+#start, #start2 {
+    display:none;  
+}
+
+@media screen and (max-width: 480px) {
+    #question, #question2 {
+        padding-top: 40px;
+    }
+    #btn {
+        margin: auto;
+        max-width: 50%;
+}

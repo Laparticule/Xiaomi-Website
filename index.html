@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Barre de titre -->
+		<title>Xiaomi.com</title>
+		<link rel="shortcut icon" type="image/x-icon" href="image/logo/logo_xiaomi.ico"/>
+		<!-- fichiers CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+		<link rel="stylesheet" type="text/css" href="css/style-slideshow.css">
+		<link rel="stylesheet" type="text/css" href="css/style-main.css">
+		<link rel="stylesheet" type="text/css" href="css/style-footer.css">
+		<!-- Polices -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="nav1"> <!-- Navigation au sein du site -->
+					<!-- Logo et Icone menu -->
+					<div id="nav1-minimal" class="nav1-minimal-closed">
+						<a id="logo-color" href="index.html"><img src="image/logo/logo_xiaomi.svg" alt="Xiaomi logo" width="25px" style="vertical-align: middle"/></a>
+						<a id="logo-bw" href="index.html"><img src="image/logo/logo_xiaomi.png" alt="Xiaomi Logo" width="25px"/></a>
+				        <p id="nav-open" class="resp-btn-display" onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></p> <!-- Bouton ouvrir menu -->
+					   <p id="nav-close" class="resp-btn-no-display" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></p> <!-- Bouton fermer menu -->
+					</div>
+					<!-- Liste -->
+					<ul id="nav1-ul" class="nav1-ul-closed">
+                        <li><a href="html/smartphone.html"><span class="nav1-img"><i class="fa fa-mobile" aria-hidden="true"></i></span><span class="nav1-txt">Smartphones</span></a></li>
+					    <li><a href="html/tablet_laptop.html"><span class="nav1-img"><i class="fa fa-laptop" aria-hidden="true"></i></span><span class="nav1-txt">Tablets & Laptops</span></a></li>
+					    <li><a href="html/accessory.html"><span class="nav1-img"><i class="fa fa-headphones" aria-hidden="true"></i></span><span class="nav1-txt">Accessories</span></a></li>
+					    <li><a href="html/high_tech.html"><span class="nav1-img"><i class="fa fa-rocket" aria-hidden="true"></i></span><span class="nav1-txt">High Tech</span></a></li>
+					    <li><a href="html/smart_home.html"><span class="nav1-img"><i class="fa fa-home" aria-hidden="true"></i></span><span class="nav1-txt">Smart Home</span></a></li>
+					    <li><a href="html/about.html"><span class="nav1-img"><i class="fa fa-info" aria-hidden="true"></i></span><span class="nav1-txt">About Us</span></a></li>
+					</ul>
+			</div>
+		</header>
+
+		<!-- Slideshow -->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image/slideshow/mimix2.jpg" style="width:100%"/>
+                <div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">MI MIX 2</span></div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="image/slideshow/minotebookpro.jpg" style="width:100%"/>
+                <div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">MI NOTEBOOK PRO</span></div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="image/slideshow/yeelightlamp.jpg" style="width:100%"/>
+                <div class="text"><span style="background-color: rgba(0,0,0,0.4); padding: 5px 10px;">YEELIGHT DESK LAMP</span></div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+			<a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+		</div>
+		
+		<!-- Image Presentation (remplace le slideshow en mode smartphone et tablette) -->
+		<div class="img-intro">
+            <h1>Mi Mix 2</h1>
+            <p>The Future is Now<p>
+            <img src="image/slideshow/mimix2-resp.jpg" alt="mimix2"/>
+        </div>
+        <br/>
+                
+		<!-- Article Compare -->
+		<div class="fond-blanc">
+			<div class="section remove-padding">
+				<div id="art-cmp">
+					<div class="center"/>
+						<div class="txt-block">
+							<h2>Xiaomi VS Apple?&nbsp;&nbsp;&nbsp;<a class="button" href="html/compare.html">Compare Now!</a></h2>
+                            <h3>China's 'Apple'</h2>
+							<p>It is well known that Xiaomi designs have always resembled in some way Apple's but now, Xiaomi could very well overtake the famous brand. In fact, Strategy Analytics says the "Chinese phoenix" could become in 2018 the world's second-largest smartphone vendor, behind Samsung.</p>
+							<h3>The Rise of Xiaomi</h2>
+							<p>Created in 2010, Xiaomi made its mark by selling cheap smartphones directly to consumers online. The company touted blockbuster sales numbers and even set a Guinness World Record in 2015. However, selling inexpensive phones ultimately associated the brand with being cheap and not chic... This was until its 2017 comeback.</p>
+						</div>
+						<div class="img-block">
+							<img src="image/article/xiaomi_apple.jpg" alt="Compare"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/><br/><br/>
+
+		<!-- Article Product Quality -->
+		<div class="fond-beige">
+			<div class="section remove-padding">
+				<div id="art-qlty">
+					<br/>
+					<h2>Quality Is More Than Making A Good Product</h2>
+					<p style="padding: 0 10px;">Xiaomi Inc. ensures you're getting the best deals. All products are designed with the finest materials on the market but there's more to it! The future is now</p>
+					<br/>
+					<div id="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/LCTHi_xU-r4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+					<ul>
+						<li><p><i class="fa fa-leaf" aria-hidden="true"></i> Finest Materials</p></li>
+						<li><p><i class="fa fa-gavel" aria-hidden="true"></i> Rigid construction</p></li>
+						<li><p><i class="fa fa-usd" aria-hidden="true"></i> Good quality/price ratio</p></li>
+						<li><p><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Innovative designs</p></li>
+						<li><p><i class="fa fa-rocket" aria-hidden="true"></i> Newest technologies</p></li>
+						<li><p><i class="fa fa-thumbs-up" aria-hidden="true"></i> User-friendly devices</p></li>
+					</ul>
+					<br/><br/>
+				</div>
+			</div>
+		</div>
+		<br/><br/><br/>
+
+		<!-- Article Q&A -->
+		<div class="fond-blanc">
+			<div class="section remove-padding">
+				<div id="art-qa">
+					<div class="img-block">
+						<img src="image/article/q&a.jpg" alt="Have a question?"/>
+					</div>
+					<div class="txt-block">
+						<h2>Q&A&nbsp;&nbsp; <a class="button" href="html/contact.html">Ask a question</a></h2><br/>
+						<h3>Where can I buy Xiaomi products?</h3>
+                        <p>While there are no official Xiaomi stores in Europe, you can still import their products from China. To see what's available, you can visit <a href="https://aliexpress.com" class="link" target="_blank">Aliexpress</a>, <a href="https://www.amazon.com" class="link" target="_blank">Amazon</a> and <a href="https://www.gearbest.com" class="link" target="_blank">Gearbest</a>.</p>
+						<h3>Do the latest Xiaomi phones work with 4G/LTE networks in France?</h3>
+                        <p>Three frequency bands are used for 4G LTE in France : 800 MHz, 1800 MHz and 2,6 GHz. However, Xiaomi phones are usually not compatible with 800 MHz bands. As a result, SFR and Orange clients will have difficulties accessing 4G networks in France. Free Mobile and Bouygues Telecom clients will not be impacted. Hopefully, you can now access 3G networks regardless of your operator. <a href="http://xiaomi-france.com/2014/09/le-point-sur-xiaomi-et-la-4g-francaise/" class="link" target="_blank">Read more here.</a></p>
+                        <h3>How does Xiaomi keep prices so low?</h3>
+						<p>Xiaomi keeps prices competitive by selling directly to consumers via its website, butting out the middleman and removing 20 to 30 percent of the gross margin that typically goes to retail channels.</p>
+					</div>
+				</div>
+			</div>
+		</div><br/>
+
+		<!-- Article Sub-Brands -->
+		<div class="fond-blanc">
+			<div class="section remove-padding">
+				<div id="art-subrand">
+                    <h2>Xiaomi Sub-Brands, Xiaomi Ecosystem</h2><br/>
+                    <p style="padding: 0 10px;">Xiaomi Ecosystem is a large network of more than 70 companies all thriving to bring the future to your door. While some of them were created by the main company, Xiaomi Inc. has also provided assistance to numerous promising start-ups. The full list of Xiaomi's subsidiaries can be viewed <a class="link" target="__blank" href="https://miui-global.com/xiaomi-ecosystem/">here</a>.</p>
+
+					<ul>
+						<li><img src="image/logo/logo_miui.jpg" alt="logo miui"><p><strong>MIUI</strong></p><p>Xiaomi department, responsible for software development and maintenance.</p></li>
+						<li><img src="image/logo/logo_mijia.jpg" alt="logo mijia"/><p><strong>MIJIA</strong></p><p>A company that creates technology, sensors, and accessories for a smart home.</p></li>
+						<li><img src="image/logo/logo_ninebot.jpg" alt="logo ninebot"/><p><strong>NINEBOT</strong></p><p>Self-balancing scooters and monocycles for adventurous rides around the town.</p></li>
+						<li><img src="image/logo/logo_yeelight.jpg" alt="logo yeelight"/><p><strong>YEELIGHT</strong></p><p>Smart, unique and wireless technologies to witness a  magic of the light.</p></li>
+						<li><img src="image/logo/logo_yi.jpg" alt="logo yi"/><p><strong>XiaoYi</strong></p><p>Smart cameras, action cameras, video recorders, security cameras etc.</p></li>
+						<li><img src="image/logo/logo_amazfit.jpg" alt="logo amazfit"/><p><strong>AMAZFIT</strong></p><p>Smart and stylish bracelets</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="section">
+				<div id="col1">
+					<ul>
+						<li><p><strong>LEARN</strong></p></li>
+						<li><p><a href="index.html">About Xiaomi Inc.</a></p></li>
+						<li><p><a href="html/about.html">About this website</a></p></li>
+						<li><p><a href="index.html#art-qa">F.A.Q.s</a></p></li>
+						<li><p><a href="html/contact.html">Ask a question</a></p></li>
+
+					</ul>
+				</div>
+				<div id="col2">
+					<ul>
+						<li><p><strong>SHOP</strong></p></li>
+						<li><p><a href="html/smartphone.html">Smartphones</a></p></li>
+						<li><p><a href="html/tablet_laptop.html">Tablets & Laptops</a></p></li>
+						<li><p><a href="html/quiz.html">How to choose a smartphone</a></p></li>
+						<li><p><a href="html/compare.html">Xiaomi VS Apple</a></p></li>
+					</ul>
+				</div>
+				<div id="col3">
+					<div id="center-col3">
+						<p>This Website is set up and operated by Audrey M. for the benefit of the UTT.  Audrey Muratore hereby states that this website is dedicated but not related to Xiaomi Inc. or any of its affiliated entity to sell products of Xiaomi Inc.</p>
+						<p><i class="fa fa-copyright" aria-hidden="true"></i> Xiaomi.com by Audrey Muratore, 2017-2017.</p>
+						<p class="footer-icon"><a target="__blank" href="https://twitter.com/xiaomi"><i class="fa fa-twitter" aria-hidden="true"></i></a>   <a target="__blank" href="https://www.facebook.com/xiaomiglobal/"><i class="fa fa-facebook" aria-hidden="true"></i></a>   <a target="__blank" href="https://plus.google.com/+MiGlobal"><i class="fa fa-google-plus" aria-hidden="true"></i></a>    <a target="__blank" href="http://www.mi.com/en/"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Scripts -->
+	<script src="js/script-main.js"></script>
+	<script src="js/script-nav.js"></script>
+	<script src="js/script-slideshow.js"></script>
+	</body>
+</html>
